@@ -11,6 +11,9 @@
   */
     background-color: rgba(0, 0, 40, 1);
     color: white;
+    --page-bg-color: var(--approximately-black);
+    --accent-color: var(--real-red);
+    --title-color:  #db00ff;
 }
 .header__theme-menu-list {
   color: #FF0070;

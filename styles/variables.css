@@ -3,5 +3,10 @@
   и их переопределение под различные устройства
 */
 :root {
- 
+   --regular-font-size: 18px;
+  --regular-line-height: 100%;
+  --decoration-gap: clamp(10px , 2.65vw , 20px);
+  --section-child-margin: 40px;
+  --min-height: 668px;
 }
+
