@@ -8,5 +8,7 @@
   --decoration-gap: clamp(10px , 2.65vw , 20px);
   --section-child-margin: 40px;
   --min-height: 668px;
+  /*  */
+  --footer-margin-left: min(10px , 20px - 2.6vw);
 }
 

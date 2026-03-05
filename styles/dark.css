@@ -37,7 +37,19 @@
   border-right: 1px solid #ff0070;
 }
  
+.header__rec::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color, #ff0070);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+}
+ 
 .header__title { 
   text-shadow: 4px 4px 0 #FF0070;
 }
-
