@@ -3,12 +3,18 @@
   и их переопределение под различные устройства
 */
 :root {
-   --regular-font-size: 18px;
+  --regular-font-size: 18px;
   --regular-line-height: 100%;
   --decoration-gap: clamp(10px , 2.65vw , 20px);
   --section-child-margin: 40px;
   --min-height: 668px;
-  /*  */
+  --corner-thickness: 1px;
   --footer-margin-left: min(10px , 20px - 2.6vw);
+  --basic-pink: #FF8DCB;
+  --title-pink: #FFC2E6;
+  --almost-white-bg: #FFF1F7;
+  --real-red: #ff0070;
+  --approximately-black: #000028;
+  --almost-black: #353430;
 }
 
