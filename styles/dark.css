@@ -1,109 +1,31 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --page-bg-color: var(--approximately-black);
-  --accent-color: var(--real-red);
-  --title-color:  #db00ff;
-  --header-text-bg-color: var(--real-red);
-  --header_text-color: var(--approximately-black);
-  --question-bg-color: var(--approximately-black);
-  --question-color: var(--real-red);
-  --answer-title-bg-color: var(--real-red);
-  --answer-title-color: var(--approximately-black);
-  --answer-text-bg-color: var(--approximately-black);
-  --answer-text-color: #f1b2ce;
-  --advice-title-bg-color: var(--real-red);
-  --advice-title-color: var(--approximately-black);
-  --button-color: var(--real-red);
-  --rec-color: var(--real-red);
-  --border-color-opacity: #FF007066;
-  --background-image:  url("../images/cover-image-dark.png");
-  --deco-color: var(--real-red);
-
+  --page-bg-color: var(--color-bg-dark);
+  --accent-color: var(--color-accent);
+  --title-color: var(--color-title-dark);
+  --header-text-color: var(--color-bg-dark);
+  --question-color: var(--color-accent);
+  --answer-title-color: var(--color-bg-dark);
+  --answer-text-color: var(--color-text-light);
+  --advice-title-color: var(--color-bg-dark);
+  --button-color: var(--color-accent);
+  --deco-color: var(--color-accent);
+  --border-color-opacity: var(--color-border-opacity-dark);
+  --background-image: url("../images/cover-image-dark.png");
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --page-bg-color: var(--approximately-black);
-    --accent-color: var(--real-red);
-    --title-color:  #db00ff;
-    --header-text-bg-color: var(--real-red);
-    --header-text-color: var(--approximately-black);
-    --question-bg-color: var(--approximately-black);
-    --question-color: var(--real-red);
-    --answer-title-bg-color: var(--real-red);
-    --answer-title-color: var(--approximately-black);
-    --answer-text-bg-color: var(--approximately-black);
-    --answer-text-color: #f1b2ce;
-    --advice-title-bg-color: var(--real-red);
-    --advice-title-color: var(--approximately-black);
-    --button-color: var(--real-red);
-    --rec-color: var(--real-red);
-    --border-color-opacity: #FF007066;
-    --border-color-opacity: #FF007066;
-    --background-image:  url("../images/cover-image-dark.png");
-    --deco-color: var(--real-red);
+  :root:not(.theme-light):not(.theme-dark) {
+    --page-bg-color: var(--color-bg-dark);
+    --accent-color: var(--color-accent);
+    --title-color: var(--color-title-dark);
+    --header-text-color: var(--color-bg-dark);
+    --question-color: var(--color-accent);
+    --answer-title-color: var(--color-bg-dark);
+    --answer-text-color: var(--color-text-light);
+    --advice-title-color: var(--color-bg-dark);
+    --button-color: var(--color-accent);
+    --deco-color: var(--color-accent);
+    --border-color-opacity: var(--color-border-opacity-dark);
+    --background-image: url("../images/cover-image-dark.png");
   }
-
-  .rec_empty::before {
-    display: inline-block;
-  }
-  
-  .rec_empty::after {
-    display: inline-block;
-  }
-}
-
-.theme-dark .rec_empty::before {
-  display: inline-block;
-}
-
-.theme-dark .rec_empty::after {
-  display: inline-block;
-}
-.header__theme-menu-list {
-  color: #FF0070;
-}
-    .header__title { 
-      color: #DB00FF;
-    }
-    /* не забыть сделать уголок для футера через афтер */
-.decorated-zone {
-  position: relative;
-}
-
-/* .decorated-zone::before {
-  content: '';
-  position: absolute;
-  top: 11px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid #ff0070;
-  border-right: 1px solid #ff0070;
-}
- 
-.header__rec::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  width: 9px;
-  height: 9px;
-  background-color: var(--accent-color, #ff0070);
-  border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
-} */
- 
-.header__title { 
-  text-shadow: 4px 4px 0 #FF0070;
 }

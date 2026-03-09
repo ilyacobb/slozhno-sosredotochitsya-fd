@@ -1,20 +1,61 @@
-/* 
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-:root {
+/* :root {
   --regular-font-size: 18px;
-  --regular-line-height: 100%;
-  --decoration-gap: clamp(10px , 2.65vw , 20px);
-  --section-child-margin: 40px;
+  --regular-line-height: 1.3;
+  --decoration-gap: clamp(10px, 2.65vw, 20px);
+  --section-margin: 40px;
   --min-height: 668px;
   --corner-thickness: 1px;
-  --footer-margin-left: min(10px , 20px - 2.6vw);
-  --basic-pink: #FF8DCB;
-  --title-pink: #FFC2E6;
-  --almost-white-bg: #FFF1F7;
-  --real-red: #ff0070;
-  --approximately-black: #000028;
-  --almost-black: #353430;
-}
+   */
+   :root {
+  /* Базовые размеры */
+  --regular-font-size: clamp(16px, 1.125rem + 0.5vw, 18px);
+  --regular-line-height: 1.3;
+  --decoration-gap: clamp(10px, 2.65vw, 20px);
+  --section-margin: clamp(40px, 5vw, 60px);
+  --min-height: clamp(668px, 80vh, 1024px);
+  --corner-thickness: 1px;
+  
+  /* Размеры заголовков */
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-tablet: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 15rem);
 
+  /* добавил, перестал использовать, т.к. не получалось, решил пока не удалять на всякий случай */
+  
+  /* Отступы */
+  --header-title-margin-top: clamp(70px, 10vh, 170px);
+  --header-description-margin-bottom: clamp(55px, 8vh, 160px);
+  --header-menu-top: clamp(60px, 8vh, 160px);
+  --header-rec-top: clamp(15px, 3vh, 30px);
+  --header-rec-right: clamp(30px, 5vw, 50px);
+  
+  /* Отступы для секций */
+  --section-vertical-gap: clamp(50px, 6vh, 60px);
+  --grid-gap: clamp(10px, 2vw, 20px);
+
+  /* Цветовые переменные */
+  --color-accent: #ff0070;
+  --color-accent-light: #FF8DCB;
+  --color-title-dark: #db00ff;
+  --color-title-light: #FFC2E6;
+  --color-bg-dark: #000028;
+  --color-bg-light: #FFF1F7;
+  --color-text-dark: #353430;
+  --color-text-light: #f1b2ce;
+  --color-border-opacity-dark: #FF007066;
+  --color-border-opacity-light: #32312D66;
+  
+  /* Переменные темы - темная */
+  --page-bg-color: var(--color-bg-dark);
+  --accent-color: var(--color-accent);
+  --title-color: var(--color-title-dark);
+  --header-text-color: var(--color-bg-dark);
+  --question-color: var(--color-accent);
+  --answer-title-color: var(--color-bg-dark);
+  --answer-text-color: var(--color-text-light);
+  --advice-title-color: var(--color-bg-dark);
+  --button-color: var(--color-accent);
+  --deco-color: var(--color-accent);
+  --border-color-opacity: var(--color-border-opacity-dark);
+  --background-image: url("../images/cover-image-dark.png");
+}
