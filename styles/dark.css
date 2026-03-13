@@ -13,7 +13,7 @@
   --background-image: url("../images/cover-image-dark.png");
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root:not(.theme-light):not(.theme-dark) {
     --page-bg-color: var(--color-bg-dark);
     --accent-color: var(--color-accent);
@@ -28,4 +28,4 @@
     --border-color-opacity: var(--color-border-opacity-dark);
     --background-image: url("../images/cover-image-dark.png");
   }
-}
+} */
