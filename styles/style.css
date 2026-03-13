@@ -8,10 +8,7 @@
   font-family: 'IBM Plex Mono', monospace, Arial, sans-serif;
   min-width: 375px;
   /* overflow-x: hidden; */
-  margin: 0;
-  padding: 0;
-
-  margin: 0 auto; /*для центрирования */
+  margin: 0 auto;
   padding: 0;
   max-width: 1440px;
   width: 100%;
