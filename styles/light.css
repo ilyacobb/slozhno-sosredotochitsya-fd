@@ -17,8 +17,8 @@
   display: none;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root:not(.theme-light):not(.theme-dark) {
+@media (prefers-color-scheme: light) {
+  :root {
     --page-bg-color: var(--color-bg-light);
     --accent-color: var(--color-accent-light);
     --title-color: var(--color-title-light);
@@ -32,4 +32,7 @@
     --border-color-opacity: var(--color-border-opacity-light);
     --background-image: url("../images/cover-image-light.png");
   }
-} */
+  .header__rec {
+  display: none;
+}
+}

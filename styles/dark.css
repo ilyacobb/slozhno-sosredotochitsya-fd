@@ -12,20 +12,6 @@
   --border-color-opacity: var(--color-border-opacity-dark);
   --background-image: url("../images/cover-image-dark.png");
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root:not(.theme-light):not(.theme-dark) {
-    --page-bg-color: var(--color-bg-dark);
-    --accent-color: var(--color-accent);
-    --title-color: var(--color-title-dark);
-    --header-text-color: var(--color-bg-dark);
-    --question-color: var(--color-accent);
-    --answer-title-color: var(--color-bg-dark);
-    --answer-text-color: var(--color-text-light);
-    --advice-title-color: var(--color-bg-dark);
-    --button-color: var(--color-accent);
-    --deco-color: var(--color-accent);
-    --border-color-opacity: var(--color-border-opacity-dark);
-    --background-image: url("../images/cover-image-dark.png");
-  }
-} */
+.theme-dark .header__rec {
+  display: block;
+}
